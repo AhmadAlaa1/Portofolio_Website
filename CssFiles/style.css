@@ -93,63 +93,78 @@ header img{
 }
 
 /* Body-Elements */
-.section-div{
-    font-family: "Patrick Hand SC", cursive;
-    font-size: 2rem;
-    padding-left: 1rem;
-    position: relative;
-    background:linear-gradient(to left ,#96caf427,#3fa1f69d);
-    margin: 1rem;
-
-
+.Container-1{
+    margin: 10rem;
 }
-
-.section-div img{
-    width: 40rem;
-    float: right;
-    position: absolute;
-    right: 0;
-    bottom: -3rem;
-}
-
-
-.section-1 , .section-2{
-    margin: 3rem 0rem;
-    padding: 2rem;
-    font-size: 2.3rem;
-    width: 40%;
-    background:linear-gradient(to left ,#96caf400,#3fa1f61b);
-}
-
-.section-1 h2,.section-2 h2{
-    color: white;
+/* ========================================================= */
+.welcome-h1{
+    width: 70rem;
     text-transform: uppercase;
+    font-family: "Patrick Hand SC", cursive;
+    font-size: 4rem;
+    position: relative;
+    left: 65rem;
+    background:linear-gradient(to left ,#96caf4b4,#3fa1f6b9);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: 0.3s;
 }
 
-.Image1{
-    margin: 5rem 3rem;
+.welcome-h1:hover{
+    transform: scale(1.1) skew(10deg,3deg);
+    text-shadow: 5px 5px 20px  rgba(0, 0, 0, 0.252);
+}
+/* ========================================================= */
+.sections section , .sections a{
+    width: 30%;
+    font-family: "Patrick Hand SC";
+    font-size: 2rem;
+    height: 7rem;
+    color: #607274;
+    margin: 10rem 25rem;
+    
+}
+
+.sections section p{
+    font-size: 1.7rem;
+}
+/* ========================================================= */
+.imgs{
+    text-align: right;
+    position: relative;
+    top: -9rem;
+    
+}
+.imgs img{
+    width: 17%;
     transition: 0.2s;
+    transition-timing-function: ease-out;
+    box-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.36);
 }
 
-.Image2{
-    margin: 10rem  ;
-    transition: 0.2s;
-
-}
-
-.Image3{
-    margin: 15rem 5rem;
-    transition: 0.2s;
-
-}
-
-.Image1:hover,.Image2:hover,.Image3:hover{
+.image1:hover,.image2:hover,.image3:hover{
+    transform: scale(1.2);
     border: 1rem solid #3fa1f6b9;
-    transform: scale(1,1);
-    z-index: 2;
+    padding: 1rem;
 }
 
+.image1{
+    position: absolute;
+    top: -30rem;
+    right: 10rem;
+}
+.image2{
+    position: absolute;
+    top: -20rem;
+    right: 35rem;
+}
 
+.image3{
+    position: absolute;
+    top: -11rem;
+    right: 20rem;
+}
+/* ========================================================= */
 
 /* Animations */
 @keyframes MoveRTL{
