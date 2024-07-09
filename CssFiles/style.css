@@ -104,18 +104,15 @@ html{
 /* =========================================================== */
 /* Body-Elements */
 .welcome-h1{
-    width: 70rem;
     text-transform: uppercase;
     font-family: "Patrick Hand SC", cursive;
-    font-size: 4rem;
-    position: relative;
-    left: 65rem;
+    font-size: 2rem;
+    text-align: center;
     background:linear-gradient(to left ,#96caf4b4,#3fa1f6b9);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     transition: 0.3s;
     margin-top: 10rem;
-    margin-bottom: 10rem;
 }
 
 .welcome-h1:hover{
@@ -125,26 +122,25 @@ html{
 
 /* ========================================================= */
 /* Section Class Css */
-.sections{
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 5%;    
-}
 
-.sections section , .sections a{
-    width: 30%;
+.container-1{
     font-family: "Patrick Hand SC";
     font-size: 2rem;
-    color: #607274;
-    margin-top: 3rem;
-    margin-left: 25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 35rem;
+    margin-top:10rem;
+   
+}
 
-    
+.container-1 section{
+    width: 30%;
+    height: 20rem;
 }
 
 .sections a {
-    width: 6%;
+    width: 7%;
     text-decoration: none;
     color:#3fa1f6b9;
     border-bottom: 0.3rem #3fa1f6b9 solid;
@@ -164,40 +160,40 @@ html{
     font-size: 1.7rem;
 }
 
-.sections img{
-    width: 30%;
-    transition: 0.2s;
-    transition-timing-function: ease-out;
-    box-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.36);
-}
-
 .sections-images{
-    position: absolute;
-    width: 40%;
-    height: 15rem;
-    right: 0;
-    top:30rem;
+    display: flex;
+    justify-content: end;
+    position: relative;
+    bottom: 42rem;
+    margin-right:10rem;
     
 }
-
+.sections-images img{
+    width: 15%;
+    transition: 0.2s;
+    
+}
+.image1{
+    position: relative;
+    top:13rem;
+    left: 10rem;
+}
 .image2{
     position: relative;
-    right: 1rem;
-    top: 1rem;
+    top:7rem;
 }
-
 .image3{
-    position: relative;
-    right: 50%;
-    top: 40%;
+     position: relative;
+     right: 15rem;
+     
 }
-
 
 .image1:hover,.image2:hover,.image3:hover{
     transform: scale(1.2);
     border: 1rem solid #3fa1f6;
     padding: 1rem;
     border-radius: 2rem;
+    z-index: 10;
 }
 
 /* ========================================================= */
@@ -209,9 +205,10 @@ html{
     height: 70rem;
     clip-path: polygon(0 19%, 100% 0, 100% 85%, 0 100%);
     display: flex;
-    justify-content: space-around;
     margin: 2rem;
     padding: 0rem 20rem;
+    justify-content: space-around;
+    align-items: center;
 
 }
 
@@ -220,15 +217,12 @@ html{
     font-size: 2rem;
     width: 15%;
     height: 50%;
-    margin-top:25rem;
     padding: 3rem;
     background-color: #67b7fdbe;
-    text-align: center;
     box-shadow: 0rem 0rem 5rem rgba(0, 0, 0, 0.281);
     transition: 0.2s;
     overflow: hidden;
-    position: relative;
-    bottom: 10rem;
+    text-align: center;
 }
 
 .header-bottom p,.header-bottom h2{
@@ -243,24 +237,7 @@ html{
     width: 20%;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* ========================================================= */
 /* Animations */
 @keyframes MoveRTL{
     0%{
@@ -337,8 +314,16 @@ html{
     from{
         opacity: 0;
     }
-
+    
     to{
         opacity: 1;
+    }
+}
+
+/*==========================================*/
+/* For Responsive */
+@media (min-width: 300px) and (max-width: 450px) {
+    html {
+        font-size: 13.5%;
     }
 }
