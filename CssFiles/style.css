@@ -217,16 +217,18 @@ html{
 
 .header-bottom div{
     font-family: "Patrick Hand SC", cursive;
-    font-weight:10rem;
     font-size: 2rem;
     width: 15%;
-    height: 40%;
-    margin-top:20rem;
+    height: 50%;
+    margin-top:25rem;
     padding: 3rem;
     background-color: #67b7fdbe;
     text-align: center;
     box-shadow: 0rem 0rem 5rem rgba(0, 0, 0, 0.281);
     transition: 0.2s;
+    overflow: hidden;
+    position: relative;
+    bottom: 10rem;
 }
 
 .header-bottom p,.header-bottom h2{
