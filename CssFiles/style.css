@@ -9,11 +9,11 @@ html{
 }
 
 /* Header-Elements */
-header{
+.top-header{
     background:linear-gradient(to left ,#96caf4b4,#3fa1f6b9),url("../Imgs/nat-6.jpg");
     padding: 15%;
-    margin: 1rem;
-    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+    margin: 2rem;
+    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
     position: relative;
     text-align: center;
     animation-name: fade;
@@ -21,7 +21,7 @@ header{
     animation-duration: 0.5s;
 }
 
-header img{
+.top-header img{
     width: 5rem;
     position: absolute;
     top: 5rem;
@@ -29,7 +29,7 @@ header img{
     
 }
 
-header img:hover{
+.top-header img:hover{
     animation-name: crown;
     animation-duration: 1s;
     animation-timing-function: ease-in-out;
@@ -101,7 +101,7 @@ header img:hover{
     transform: scale(1);
     box-shadow: 0 0 1rem white;
 }
-
+/* =========================================================== */
 /* Body-Elements */
 .welcome-h1{
     width: 70rem;
@@ -115,6 +115,7 @@ header img:hover{
     -webkit-text-fill-color: transparent;
     transition: 0.3s;
     margin-top: 10rem;
+    margin-bottom: 10rem;
 }
 
 .welcome-h1:hover{
@@ -128,7 +129,7 @@ header img:hover{
     position: relative;
     display: flex;
     flex-direction: column;
-    
+    margin-bottom: 5%;    
 }
 
 .sections section , .sections a{
@@ -146,11 +147,7 @@ header img:hover{
     width: 6%;
     text-decoration: none;
     color:#3fa1f6b9;
-    border-style:solid;
-    border-width: 0.1rem;
-    border-top: #3fa1f6b9;
-    border-left: #3fa1f6b9;
-    border-right: #3fa1f6b9;
+    border-bottom: 0.3rem #3fa1f6b9 solid;
     transition: 0.3s;
     padding: 0.5rem;
 }
@@ -159,13 +156,13 @@ header img:hover{
 .sections a:hover{
     background-color: #3fa1f6b9;
     color:white;
-    box-shadow: 0rem 0rem 1rem rgba(0, 0, 0, 0.226);
-}
+    box-shadow: 0.1rem 0.1rem 1rem rgba(0, 0, 0, 0.291);
+    transform: translateY(-0.3rem);
+}   
 
 .sections section p{
     font-size: 1.7rem;
 }
-
 
 .sections img{
     width: 30%;
@@ -179,14 +176,16 @@ header img:hover{
     width: 40%;
     height: 15rem;
     right: 0;
-    top:20rem;
+    top:30rem;
     
 }
+
 .image2{
     position: relative;
     right: 1rem;
     top: 1rem;
 }
+
 .image3{
     position: relative;
     right: 50%;
@@ -202,6 +201,63 @@ header img:hover{
 }
 
 /* ========================================================= */
+/* Header-Bottom Css */
+
+.header-bottom{
+    
+    background: linear-gradient(to left,#96caf4b4,#3fa1f6b9),url("../Imgs/nat-1-large.jpg");
+    height: 70rem;
+    clip-path: polygon(0 19%, 100% 0, 100% 85%, 0 100%);
+    display: flex;
+    justify-content: space-around;
+    margin: 2rem;
+    padding: 0rem 20rem;
+
+}
+
+.header-bottom div{
+    font-family: "Patrick Hand SC", cursive;
+    font-weight:10rem;
+    font-size: 2rem;
+    width: 15%;
+    height: 40%;
+    margin-top:20rem;
+    padding: 3rem;
+    background-color: #67b7fdbe;
+    text-align: center;
+    box-shadow: 0rem 0rem 5rem rgba(0, 0, 0, 0.281);
+    transition: 0.2s;
+}
+
+.header-bottom p,.header-bottom h2{
+    margin-top: 3rem;
+}
+
+.header-bottom div:hover{
+    transform: translateY(-2rem);
+}
+
+.header-bottom div img{
+    width: 20%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Animations */
 @keyframes MoveRTL{
