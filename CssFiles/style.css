@@ -299,7 +299,8 @@ html{
     color: white;
     padding: 0.5rem 1rem;
     text-transform: uppercase;
-    overflow-x:hidden;
+    overflow-x:hidde
+    n;
 }
 
 .container-2{
@@ -361,6 +362,7 @@ html{
     animation-duration: 1s;
     animation-timing-function: ease-in-out;
     background:linear-gradient(to left ,#96caf4b4,#3fa1f6b9);
+    position: relative;
 }
 .tours-button a button::after{
     content: "";
