@@ -209,6 +209,9 @@ html{
     padding: 0rem 20rem;
     justify-content: space-around;
     align-items: center;
+    animation-name: fade;
+    animation-timing-function: ease-in-out;
+    animation-duration: 0.5s;
 
 }
 
@@ -470,10 +473,12 @@ html{
 @keyframes fade{
     from{
         opacity: 0;
+        filter: blur(0.5rem);
     }
     
     to{
         opacity: 1;
+        filter: blur(0);
     }
 }
 
